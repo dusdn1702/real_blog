@@ -5,7 +5,7 @@ import blogweb.views
 
 
 urlpatterns =[
-    path('home', blogweb.views.home, nerrame='home'),
+    path('home', blogweb.views.home, name='home'),
     path('', blogweb.views.post, name='post'),
     path('post/<int:post_id>/', blogweb.views.detail, name='detail'),
     path('post/new/', blogweb.views.new, name='new'),
